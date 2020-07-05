@@ -8,18 +8,6 @@ import {FormBuilder,FormControl,FormGroup,FormArray, Validators} from '@angular/
   styleUrls: ['./app.component.css']
 })
 
-class loginuser{
-  name:string;
-  email:string;
-  dob:Date;
-  country:string;
-  gender:string;
-  status:string;
-  street:string;
-  door:string;
-  pin:string;
-
-}
 
 export class AppComponent implements OnInit {
   title = 'app';
@@ -27,7 +15,7 @@ export class AppComponent implements OnInit {
   submitform=false;
   login:FormGroup;
   
-data=loginuser;
+data;
 adddata=[];
   constructor(private log:FormBuilder)
   { this.ngOnInit(); }
